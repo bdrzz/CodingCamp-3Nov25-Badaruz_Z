@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">My Website</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#our-profile">Our Profile</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#message-us">Message Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1 id="welcomeTitle">Hi, Welcome To Website</h1>
+        <p>Ini adalah website sederhana perusahaan.</p>
+      </div>
+      <div class="hero-photo" aria-label="photo banner"></div>
+    </section>
+
+    <!-- Our Profile (navigasi dari navbar) -->
+    <section id="our-profile" class="profile">
+      <h2>Our Profile</h2>
+      <p>Tentang perusahaan: sejarah singkat, lini bisnis, nilai, serta tim inti.</p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>About the Company</h3>
+          <p>Kami bergerak di bidang teknologi dan layanan digital sejak 2020.</p>
+        </article>
+        <article class="card">
+          <h3>Vision</h3>
+          <p>Menjadi pemimpin solusi digital yang memberdayakan jutaan pengguna.</p>
+        </article>
+        <article class="card">
+          <h3>Mission</h3>
+          <ul>
+            <li>Menciptakan produk bermanfaat.</li>
+            <li>Melayani pelanggan dengan empati.</li>
+            <li>Berinovasi berkelanjutan.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Our Headquarter</h3>
+      <div class="hq">
+        <div class="hq-item">
+          <div class="circle"></div>
+          <span>Jakarta</span>
+        </div>
+        <div class="hq-item">
+          <div class="circle"></div>
+          <span>Bandung</span>
+        </div>
+        <div class="hq-item">
+          <div class="circle"></div>
+          <span>Surabaya</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio (opsional konten) -->
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="grid-3">
+        <div class="card">Project A</div>
+        <div class="card">Project B</div>
+        <div class="card">Project C</div>
+      </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="message-us" class="contact">
+      <h2>Message Us</h2>
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <label>Nama
+            <input type="text" id="name" name="name" placeholder="Nama" required />
+          </label>
+
+          <label>Tanggal Lahir
+            <input type="date" id="dob" name="dob" required />
+          </label>
+
+          <label>Jenis Kelamin
+            <select id="gender" name="gender" required>
+              <option value="">Pilih</option>
+              <option value="Laki-laki">Laki-laki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </label>
+
+          <label>Email
+            <input type="email" id="email" name="email" required placeholder="nama@domain.com" />
+          </label>
+
+          <label>Nomor HP
+            <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required />
+          </label>
+
+          <label>Message
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <aside class="result">
+          <h3>Form Result</h3>
+          <ul id="resultList">
+            <li>Nama: -</li>
+            <li>Tanggal Lahir: -</li>
+            <li>Jenis Kelamin: -</li>
+            <li>Email: -</li>
+            <li>Nomor HP: -</li>
+            <li>Message: -</li>
+            <li id="currentTime">Current time: -</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Created by Kamu
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
